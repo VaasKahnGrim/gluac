@@ -40,6 +40,6 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key: $GITHUB_KEY
-  file: "${TRAVIS_BUILD_DIR}/projects/${PROJECT_OS}/${COMPILER_PLATFORM}/release/gluac"
+  file: "${TRAVIS_BUILD_DIR}/*"
   on:
     repo: VaasKahnGrim/gluac
