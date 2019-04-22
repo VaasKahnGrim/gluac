@@ -36,10 +36,3 @@ before_script: cd "$REPO" && $PREMAKE5 gmake
 script:
   - cd "$REPO/project"
   - make
-deploy:
-  skip_cleanup: true
-  provider: releases
-  api_key: $GITHUB_KEY
-  file: ${TRAVIS_BUILD_DIR}/*
-  on:
-    repo: VaasKahnGrim/gluac
